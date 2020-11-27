@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-sm-3" *ngFor="let donation of donations; let i = index" [class.active]="i == currentIndex"
+        (click)="setActiveDonation(donation, i)">
+
+        <div class="card">
+            <div class="bg-image hover-overlay ripple" data-ripple-color="light">
+                <img src="https://mdbootstrap.com/img/new/standard/nature/111.jpg" class="img-fluid" />
+                <!-- <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+          </a> -->
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{ donation.title }}</h5>
+                
+                <p class="card-text"> {{ donation.description }} </p>
+                <p class="card-text"> {{ donation.amount }} </p>
+           
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                </div>
+                <a href="#!" class="btn btn-primary">Support</a>
+            </div>
+        </div>
+
+
+    </div>
+</div>

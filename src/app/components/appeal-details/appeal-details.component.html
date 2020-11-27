@@ -1,0 +1,42 @@
+<div style="width: 400px; margin: auto;">
+    <div *ngIf="currentAppeal" class="edit-form">
+        <h4>Appeal</h4>
+        <form>
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" [(ngModel)]="currentAppeal.title" name="title" />
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" class="form-control" id="description" [(ngModel)]="currentAppeal.description"
+                    name="description" />
+            </div>
+
+            <div class="form-group">
+                <label><strong>Status:</strong></label>
+                {{ currentAppeal.published ? "Published" : "Pending" }}
+            </div>
+        </form>
+
+        <button class="badge badge-primary mr-2" *ngIf="currentAppeal.published" (click)="updatePublished(false)">
+            UnPublish
+        </button>
+        <button *ngIf="!currentAppeal.published" class="badge badge-primary mr-2" (click)="updatePublished(true)">
+            Publish
+        </button>
+
+        <button class="badge badge-danger mr-2" (click)="deleteAppeal()">
+            Delete
+        </button>
+
+        <button type="submit" class="badge badge-success" (click)="updateAppeal()">
+            Update
+        </button>
+        <p>{{ message }}</p>
+    </div>
+
+    <div *ngIf="!currentAppeal">
+        <br />
+        <p>Cannot access this Appeal...</p>
+    </div>
+</div>
