@@ -1,0 +1,42 @@
+footer{
+    background: grey;
+    padding-top: px;
+    padding-bottom: 0;
+    font-size: small;
+    font-family: 'Varela', sans-serif;
+    color: black;
+
+}
+
+h6 {
+    color:#e76f51ff;
+    padding-top: 10px;
+}
+
+a {
+
+    color: #a8dadc
+}
+p{
+    align-items: center;
+}
+
+hr {
+
+    height: .5px;
+    background-color:#e76f51ff!important;
+    border: none;
+}
+.footer-copyright {
+    padding-bottom: 5px;
+}
+.footer-copyright p{
+    font-size: small;
+    
+}
+
+.footer-copyright a{
+    color:#e76f51ff!important;
+    font-size: small;
+    
+}

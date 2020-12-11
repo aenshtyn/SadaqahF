@@ -1,0 +1,31 @@
+
+nav {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(136, 128, 128, 0);
+    overflow: hidden;
+    /* color: #eec661; */
+    padding: 0;
+    text-align: right;
+    margin:0;
+    padding-right: 0px;
+    transition: 1100ms;
+    /* -webkit-box-shadow: -1px 24px 30px -17px rgba(0,0,0,0.39);
+    -moz-box-shadow: -1px 24px 30px -17px rgba(0,0,0,0.39);
+    box-shadow: -1px 24px 30px -17px rgba(0,0,0,0.39); */
+}
+
+nav a:hover {
+    color: #e76f51ff;
+}
+
+
+img {
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+nav ul a:hover {
+    color: #e76f51ff;
+}

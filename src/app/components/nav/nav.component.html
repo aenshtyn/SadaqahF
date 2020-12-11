@@ -1,11 +1,26 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top scrolling-navbar">
+  <a routerLink="home" class="navbar-brand js-scroll-trigger ">
+      <img src="../assets/img/logo.png" height="38" alt="logo"><strong> Sadaqah </strong>
+  </a>
+  <button type="button" class="navbar-toggler js-scroll-trigger " data-toggle="collapse" data-target="#navbarCollapse">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" routerLink="appeals">Sadaqah</a>
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
+     
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
+
+
+        <a routerLink="appeals" class="nav-item nav-link js-scroll-trigger ">Appeals</a> 
+        <a routerLink="about" class="nav-item nav-link  js-scroll-trigger">About</a> 
+        <a routerLink="donations" class="nav-item nav-link js-scroll-trigger">Donations</a> 
+        <!-- <a routerLink="team" class="nav-item nav-link js-scroll-trigger">lawyers</a>  -->
+        <!-- <a routerLink="client" class="nav-item nav-link js-scroll-trigger" >Client Portal</a>  -->
+        <!-- <a routerLink="contact" class="nav-item nav-link js-scroll-trigger" >Contact</a>  -->
+
+
+        <!-- <li class="nav-item active">
           <a class="nav-link" routerLink="appeals"> Appeals <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
@@ -13,7 +28,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
-        </li>
+        </li> -->
       </ul>
       <!-- <form class="form-inline my-2 my-lg-0"> -->
       
