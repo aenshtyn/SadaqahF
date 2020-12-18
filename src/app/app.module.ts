@@ -13,6 +13,8 @@ import { AppealDetailsComponent } from './components/appeal-details/appeal-detai
 import { DonationsListComponent } from './components/donations-list/donations-list.component';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { MatToolbarModule,  MatIconModule,  MatCardModule,  MatButtonModule,  MatProgressSpinnerModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -29,9 +31,16 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    // MatToolbarModule,
+    // MatIconModule,
+    // MatCardModule,
+    // MatButtonModule,
+    // MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }

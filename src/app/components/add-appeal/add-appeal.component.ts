@@ -11,6 +11,10 @@ export class AddAppealComponent implements OnInit {
   appeal = {
     title: '',
     description: '',
+    tag: '',
+    amount: '',
+    address: '',
+    image: '',
     published: false
   };
   submitted = false;
@@ -23,7 +27,11 @@ export class AddAppealComponent implements OnInit {
   saveAppeal(): void {
     const data = {
       title: this.appeal.title,
-      description: this.appeal.description
+      description: this.appeal.description,
+      tag: this.appeal.tag,
+      amount: this.appeal.amount,
+      address: this.appeal.address,
+      image: this.appeal.address,
     };
 
     this.appealService.create(data)
@@ -31,7 +39,6 @@ export class AddAppealComponent implements OnInit {
       response => {
         console.log(response);
         this.submitted = true;
-
       },
 
       error => {
@@ -45,6 +52,11 @@ export class AddAppealComponent implements OnInit {
     this.appeal = {
       title: '',
       description: '',
+      tag: '',
+      amount: '',
+      address: '',
+      image: '',
+
       published: false
     };
   }
